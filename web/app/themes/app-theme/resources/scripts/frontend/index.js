@@ -4,6 +4,8 @@ import './vendor/*.js';
 import '@styles/frontend';
 import '@images/favicon.ico';
 import './spritesvg';
+// blocks
+import './blocks/test';
 
 // Your code goes here ...
 
