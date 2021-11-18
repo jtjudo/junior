@@ -19,3 +19,4 @@
 @section('content')
 	@include('views.partials.loop')
 @endsection
+
