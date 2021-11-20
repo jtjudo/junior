@@ -24,6 +24,7 @@
 						<div class='hero-module-headline'>
 							{!! $headline !!}
 						</div>
+
 					@endif
 					@if(!empty($advantages))
 						<div class='hero-module-advantage'>
