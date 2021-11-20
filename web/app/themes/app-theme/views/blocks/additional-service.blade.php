@@ -12,6 +12,7 @@
 @php
 	$headline = get_field('headline');
 	$content = get_field('content');
+    $
 @endphp
 
 <section>

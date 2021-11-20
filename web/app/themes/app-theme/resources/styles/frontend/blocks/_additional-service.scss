@@ -19,6 +19,7 @@
   color: #F3F3F3;
 }
 .additional-service-content {
+  width: 100%;
   color: #FDB312;
 }
 .additional-service-content-headline-description {
@@ -36,7 +37,6 @@
 .additional-service-content-gradient {
   position: relative;
   margin-bottom: 25px;
-  width: 344px;
   height: 90px;
   background: linear-gradient(90deg, #FDB312 0%, rgba(253, 179, 18, 0) 100%);
 }
