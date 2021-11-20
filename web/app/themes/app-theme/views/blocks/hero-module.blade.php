@@ -17,7 +17,7 @@
 <section>
 	<div class='container'>
 		<div class='hero-module-wrapper'>
-			@if(!empty($image))
+			@if(!empty($image['url']))
 			<div class='hero-module-image' style="background-image: {!! $image['url'] !!}">
 			</div>
 			@endif
@@ -31,8 +31,13 @@
 					<div class='hero-module-advantage'>
 						@foreach($advantages as $advantage)
 							<div class='hero-module-advantage-wrapper'>
-								<div class='hero-module-circle'></div>
-								<div>{!! $advantage['text_advantage'] !!}</div>
+								<div class='hero-module-circle'>
+								</div>
+								@if(!empty($advantage['text_advantage']))
+								<div>
+									{!! $advantage['text_advantage'] !!}
+								</div>
+								@endif
 							</div>
 						@endforeach
 					</div>
