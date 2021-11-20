@@ -21,33 +21,43 @@
 		<div class="additional-service-background">
 
 			<div class="additional-service-wrapper">
-				<div class="additional-service-headline">
-					{!! $headline !!}
-				</div>
-				<div class="additional-service-content">
-					@foreach($content as $item)
-						<div class="additional-service-content-wrapper">
-							<div class="additional-service-content-gradient"></div>
-							<div class="additional-service-content-text">
-								<div class="additional-service-content-headline-description">
-									{!! $item['headline_description'] !!}
-								</div>
-								<div class="additional-service-content-description">
-									{!! $item['description'] !!}
+				@if(!empty($headline))
+					<div class="additional-service-headline">
+						{!! $headline !!}
+					</div>
+				@endif
+				@if(!empty($content))
+					<div class="additional-service-content">
+						@foreach($content as $item)
+							<div class="additional-service-content-wrapper">
+								<div class="additional-service-content-gradient"></div>
+								<div class="additional-service-content-text">
+									@if(!empty($item['headline_description']))
+										<div class="additional-service-content-headline-description">
+											{!! $item['headline_description'] !!}
+										</div>
+									@endif
+									@if(!empty($item['description']))
+										<div class="additional-service-content-description">
+											{!! $item['description'] !!}
+										</div>
+									@endif
 								</div>
 							</div>
-						</div>
-					@endforeach
-				</div>
-				<div class="additional-service-button">
-
-						@foreach($buttons as $button)
-						<button>
-							<a href="	{{$button['link_button']}}">	{{$button['text_button']}}</a>
-						</button>
 						@endforeach
-
-				</div>
+					</div>
+				@endif
+				@if(!empty($buttons))
+					<div class="additional-service-button">
+						@foreach($buttons as $button)
+							@if(!empty($button['link_button'] && $button['text_button']))
+								<button>
+									<a href="{{$button['link_button']}}">{{$button['text_button']}}</a>
+								</button>
+							@endif
+						@endforeach
+					</div>
+				@endif
 			</div>
 		</div>
 	</div>
