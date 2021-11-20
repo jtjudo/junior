@@ -23,7 +23,7 @@
 			<div class="additional-service-wrapper">
 				<div class="additional-service-content">
 					@foreach($content as $item)
-						<div class="additional-service-content-gradient">
+						<div class="additional-service-content-gradient" style="width: 200px">
 							<div class="additional-service-content-wrapper">
 								<div class="additional-service-content-headline-description">
 									{!! $item['headline_description'] !!}
