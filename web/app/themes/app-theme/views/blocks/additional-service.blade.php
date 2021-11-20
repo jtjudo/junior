@@ -12,6 +12,7 @@
 @php
 	$headline = get_field('headline');
 	$content = get_field('content');
+    $buttons = get_field('button')
 
 @endphp
 
@@ -35,11 +36,17 @@
 									{!! $item['description'] !!}
 								</div>
 							</div>
-
 						</div>
-
-
 					@endforeach
+				</div>
+				<div class="additional-service-button">
+
+						@foreach($buttons as $button)
+						<button>
+							<a href="	{{$button['link_button']}}">	{{$button['text_button']}}</a>
+						</button>
+						@endforeach
+
 				</div>
 			</div>
 		</div>

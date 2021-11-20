@@ -100,6 +100,62 @@
                     "step": ""
                 }
             ]
+        },
+        {
+            "key": "field_6198fb6194d0e",
+            "label": "Кнопка",
+            "name": "button",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 1,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6198fba794d0f",
+                    "label": "Название кнопки",
+                    "name": "text_button",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6198fbd294d10",
+                    "label": "Ссылка кнопки",
+                    "name": "link_button",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -119,5 +175,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637400471
+    "modified": 1637415928
 }
