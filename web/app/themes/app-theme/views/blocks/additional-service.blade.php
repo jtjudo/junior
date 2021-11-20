@@ -12,20 +12,22 @@
 @php
 	$headline = get_field('headline');
 	$content = get_field('content');
-    $
+
 @endphp
 
 <section>
 	<div class="container">
 		<div class="additional-service-background">
-			<div class="additional-service-headline">
-				{!! $headline !!}
-			</div>
+
 			<div class="additional-service-wrapper">
+				<div class="additional-service-headline">
+					{!! $headline !!}
+				</div>
 				<div class="additional-service-content">
 					@foreach($content as $item)
-						<div class="additional-service-content-gradient" style="width: 200px">
-							<div class="additional-service-content-wrapper">
+						<div class="additional-service-content-wrapper">
+							<div class="additional-service-content-gradient"></div>
+							<div class="additional-service-content-text">
 								<div class="additional-service-content-headline-description">
 									{!! $item['headline_description'] !!}
 								</div>
@@ -33,7 +35,9 @@
 									{!! $item['description'] !!}
 								</div>
 							</div>
+
 						</div>
+
 
 					@endforeach
 				</div>
