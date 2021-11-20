@@ -16,25 +16,31 @@
 <section>
 	<div class='container'>
 		<div class='benefist-wrapper'>
-			<div class='benefist-headline'>
-				{!! $headline !!}
-			</div>
-
-			<div class='benefist-content-wrapper'>
-				@foreach($benefists as $benefist)
-					<div class='benefist-content'>
-						<div class='benefist-content-image-background'>
-							<div class='benefist-content-image'>
-								<img src="{!! $benefist['image']['url']!!}" alt="">
+			@if(!empty($headline))
+				<div class='benefist-headline'>
+					{!! $headline !!}
+				</div>
+			@endif
+			@if(!empty($benefists))
+				<div class='benefist-content-wrapper'>
+					@foreach($benefists as $benefist)
+						<div class='benefist-content'>
+							<div class='benefist-content-image-background'>
+								@if(!empty($benefist['image']['url']))
+									<div class='benefist-content-image'>
+										<img src="{!! $benefist['image']['url']!!}" alt="">
+									</div>
+								@endif
 							</div>
+							@if(!empty($benefist['description']))
+								<div class='benefist-content-description'>
+									{!! $benefist['description'] !!}
+								</div>
+							@endif
 						</div>
-						<div class='benefist-content-description'>
-							{!! $benefist['description'] !!}
-						</div>
-
-					</div>
-				@endforeach
-			</div>
+					@endforeach
+				</div>
+			@endif
 		</div>
 	</div>
 </section>
