@@ -17,26 +17,33 @@
 <section>
 	<div class='container'>
 		<div class='hero-module-wrapper'>
-			<div class='hero-module-image'>
-				<img src="{!! $image['url'] !!}" alt="">
+			@if(!empty($image))
+			<div class='hero-module-image' style="background-image: {!! $image['url'] !!}">
 			</div>
+			@endif
 			<div class='hero-module-content'>
-				<div class='hero-module-headline'>
-					{!! $headline !!}
-				</div>
-				<div class='hero-module-advantage'>
-					@foreach($advantages as $advantage)
-						<div class='hero-module-advantage-wrapper'>
-							<div class='hero-module-circle'></div>
-							<div>{!! $advantage['text_advantage'] !!}</div>
-						</div>
-					@endforeach
-				</div>
-				<div class='hero-module-button'>
-					<button>
-						<a href="{!! $link_btn !!}">{!! $text_btn !!}</a>
-					</button>
-				</div>
+				@if(!empty($headline))
+					<div class='hero-module-headline'>
+						{!! $headline !!}
+					</div>
+				@endif
+				@if(!empty($advantages))
+					<div class='hero-module-advantage'>
+						@foreach($advantages as $advantage)
+							<div class='hero-module-advantage-wrapper'>
+								<div class='hero-module-circle'></div>
+								<div>{!! $advantage['text_advantage'] !!}</div>
+							</div>
+						@endforeach
+					</div>
+				@endif
+				@if(!empty($link_btn && $text_btn))
+					<div class='hero-module-button'>
+						<button>
+							<a href="{!! $link_btn !!}">{!! $text_btn !!}</a>
+						</button>
+					</div>
+				@endif
 			</div>
 		</div>
 	</div>
