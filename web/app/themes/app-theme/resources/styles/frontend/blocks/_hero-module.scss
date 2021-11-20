@@ -1,6 +1,5 @@
 .hero-module-wrapper {
   width: 100%;
-  position: relative;
 }
 .hero {
   background-repeat: no-repeat;
@@ -117,7 +116,7 @@
     display: block;
   }
   .hero-module-content {
-    top: 50%;
+    top: 35%;
     left: 50%;
   }
   .hero-module-advantage-wrapper {
@@ -154,9 +153,19 @@
     width: 100%;
     height: 700px;
   }
+  .hero {
+    background-position-x: 15%;
+  }
 }
-
+@media (max-width: 425px) {
+  .hero {
+    background-position-x: 20%;
+  }
+}
 @media (max-width: 320px) {
+  .hero {
+    background-position-x: 23%;
+  }
   .hero-module-headline {
     font-size: 37px;
   }
