@@ -14,11 +14,11 @@
     $text_btn = get_field('text_btn');
     $link_btn = get_field('link_btn')
 @endphp
-<section>
+<section class="hero" style="background-image: url({{$image['url']}})">
 	<div class='container'>
 		<div class='hero-module-wrapper'>
 			@if(!empty($image['url']))
-			<div class='hero-module-image' style="background-image: {!! $image['url'] !!}">
+			<div class='hero-module-image' >
 			</div>
 			@endif
 			<div class='hero-module-content'>
