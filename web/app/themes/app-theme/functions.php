@@ -84,3 +84,11 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
 // Register hooks.
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
              . 'hooks.php';
+
+add_action( 'after_setup_theme', 'gutenberg_setup_theme' );
+function gutenberg_setup_theme(){
+
+	// подключение кастомных стилей для гутенберга
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'editor-style.css' );
+}

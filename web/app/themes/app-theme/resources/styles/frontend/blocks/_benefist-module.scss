@@ -1,0 +1,120 @@
+.benefist-wrapper {
+  padding: 0 90px;
+  background-color: #F3F3F3;
+}
+
+.benefist-headline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #1F1F1F;
+  margin-bottom: 70px;
+}
+
+.benefist-content-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefist-content {
+  Width: 177px;
+  Height: 231px;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 43px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefist-content-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 18px;
+  display: flex;
+}
+
+.benefist-content-image-background {
+  position: relative;
+  width: 137px;
+  height: 137px;
+  background: white;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.benefist-content-description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  color: #1F1F1F;
+  padding: 0 25px;
+}
+@media (max-width: 1440px) {
+
+  .benefist-content {
+
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .benefist-wrapper {
+    padding: 0 20px;
+  }
+  .benefist-content {
+    Width: 177px;
+    Height: 231px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (max-width: 900px) {
+  .benefist-content {
+    Width: 177px;
+    Height: 231px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 43px;
+  }
+  .benefist-headline {
+    font-size: 35px;
+  }
+}
+@media (max-width: 490px) {
+  .benefist-wrapper {
+    padding: 0 5px;
+  }
+  .benefist-headline {
+    font-size: 18px;
+  }
+  .benefist-content {
+    Width: 136px;
+    Height: 141px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 350px) {
+  .benefist-content {
+    Width: 126px;
+    Height: 141px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+  }
+}
