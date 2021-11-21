@@ -14,6 +14,6 @@
 
 @yield('content')
 
-@include('views.partials.sidebar')
+
 
 @include('views.partials.footer')

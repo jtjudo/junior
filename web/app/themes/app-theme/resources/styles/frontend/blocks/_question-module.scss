@@ -1,0 +1,95 @@
+.questions-module-background {
+  width: 100%;
+  background-color: #E0E0E0;
+}
+.questions-module-container {
+  max-width: 1072px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.questions-module-headline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #1F1F1F;
+  padding-top: 140px;
+  padding-bottom: 90px;
+}
+.questions-module-questions {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+}
+.questions-module-svh-plus {
+  width: 24px;
+  height: 24px;
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 12.5H0V11.5H24V12.5Z' fill='%231F1F1F'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 -4.37114e-08L12.5 24L11.5 24L11.5 0L12.5 -4.37114e-08Z' fill='%231F1F1F'/%3e%3c/svg%3e");
+}
+.questions-module-svh-minus {
+  display: none;
+  width: 24px;
+  height: 24px;
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 12.5H0V11.5H24V12.5Z' fill='%231F1F1F'/%3e%3c/svg%3e");
+}
+.questions-module-wrapper {
+  padding: 34px 0;
+  border-bottom: 1px solid #565656;
+  border-top: 1px solid #565656;;
+  margin-bottom: -1px;
+}
+.questions-module-answer {
+  display: none;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  color: #565656;
+}
+.questions-module-text-support {
+  max-width: 710px;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  color: #565656;
+  padding: 100px 30px 34px;
+}
+
+.questions-module-button {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-decoration-line: underline;
+  color: #1F1F1F;
+  padding-bottom: 140px;
+}
+.active {
+  .questions-module-answer {
+    display: block;
+  }
+  .questions-module-questions{
+    padding-bottom: 34px;
+  }
+  .questions-module-svh-plus{
+    display: none;
+  }
+  .questions-module-svh-minus{
+    display: block;
+  }
+
+}
