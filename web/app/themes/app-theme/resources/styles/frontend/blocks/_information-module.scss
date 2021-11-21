@@ -25,10 +25,12 @@
   letter-spacing: -0.01em;
   color: #1F1F1F;
 }
+
 .information-module-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .information-module-subheadline {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -66,18 +68,22 @@
   letter-spacing: -0.01em;
   color: #1F1F1F;
 }
+
 span {
   color: #FDB312;;
 }
+
 .information-module-button button:hover {
   cursor: pointer;
   background: #FFD600
 }
+
 @media(max-width: 786px) {
   .information-module-headline {
     text-align: center;
   }
 }
+
 @media(max-width: 476px) {
   .information-module-headline {
     font-size: 18px;
