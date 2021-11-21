@@ -1,0 +1,103 @@
+.information-module-background {
+  background-color: #F3F3F3;
+}
+
+.information-module {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.information-module-headline {
+  padding-top: 140px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  color: #1F1F1F;
+  padding-bottom: 40px;
+}
+
+.information-module-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #1F1F1F;
+}
+
+.information-module-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.information-module-subheadline {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125%;
+  color: #1F1F1F;
+}
+
+.information-module-info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125%;
+  color: #3d3d3d;
+}
+
+.information-module-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 77px;
+  padding-bottom: 151px;
+}
+
+.information-module-button button {
+  padding: 20px 35px;
+  background: #FDB312;
+  border-radius: 50px;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #1F1F1F;
+}
+
+span {
+  color: #FDB312;;
+}
+
+.information-module-button button:hover {
+  cursor: pointer;
+  background: #FFD600
+}
+
+@media(max-width: 786px) {
+  .information-module-headline {
+    text-align: center;
+  }
+}
+
+@media(max-width: 476px) {
+  .information-module-headline {
+    font-size: 18px;
+  }
+  .information-module-content {
+    font-size: 14px;
+  }
+  .information-module-subheadline {
+    font-size: 14px;
+  }
+  .information-module-info-text {
+    font-size: 14px;
+  }
+  .information-module-button button {
+    font-size: 14px;
+  }
+}
