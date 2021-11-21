@@ -6,6 +6,7 @@ import '@images/favicon.ico';
 import './spritesvg';
 // blocks
 import './blocks/test';
+import './blocks/question-module';
 
 // Your code goes here ...
 
