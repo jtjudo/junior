@@ -85,6 +85,39 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
              . 'hooks.php';
 
+add_action('init', 'create_new_custom_post_type_cars');
+function create_new_custom_post_type_cars(){
+	register_post_type('products', array(
+		'labels'             => array(
+			'name'               => 'Продукты', // Основное название типа записи
+			'singular_name'      => 'Продукт', // отдельное название записи типа Book
+			'add_new'            => 'Добавить продукт',
+			'add_new_item'       => 'Добавить продукт',
+			'edit_item'          => 'Обновить продукт',
+			'new_item'           => 'Новый продукт',
+			'view_item'          => 'Посмотреть продукт',
+			'search_items'       => 'Найти продукт',
+			'not_found'          => 'Пролукт не найден',
+			'not_found_in_trash' => 'Продукт в корзине не найден',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Продукты'
+
+		),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'show_in_rest'       => true,
+		'supports'           => array('title','editor','author','thumbnail','excerpt')
+	) );
+}
+
 add_action( 'after_setup_theme', 'gutenberg_setup_theme' );
 function gutenberg_setup_theme(){
 

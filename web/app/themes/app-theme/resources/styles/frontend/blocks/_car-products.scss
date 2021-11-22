@@ -1,0 +1,339 @@
+
+.global_headline {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #1F1F1F;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.car-products-wrapper-block-subheadline {
+  font-size: 30px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
+
+
+
+.car-products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.description {
+  display: flex;
+  padding: 0 20px;
+}
+
+.car-products-wrapper-block-img img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+
+}
+
+.car-products-wrapper-block-img {
+  border-radius: 10px;
+
+}
+
+hr {
+  border: 1px solid #565656;
+}
+
+.BYN {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 89%;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.from {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 99.7%;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin-right: 5px;
+  margin-top: 16px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 89%;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #FDB312;
+  margin-right: 15px;
+}
+
+.info {
+  display: flex;
+  margin-top: 36px;
+
+}
+
+.car-products-wrapper-block-price {
+  display: flex;
+  margin-top: 16px;
+  margin-left: auto;
+}
+
+.button {
+  background: #FDB312;
+  border-radius: 50px;
+  order: 0;
+  flex-grow: 0;
+  padding: 20px 35px;
+  margin-top: 71px;
+  margin-bottom: 140px;
+}
+
+.global_button {
+  display: flex;
+  justify-content: center;
+}
+
+.car-products-wrapper-block-button_car {
+  margin-right: 16px;
+  border: 1px solid #FDB312;
+  max-height: 43px;
+  display: flex;
+  align-items: center;
+  min-width: 128px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.button-text {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #FDB312;
+}
+
+.car-products-wrapper-block-description {
+  margin-bottom: 30px;
+}
+
+.car-products-wrapper-block {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.car-products-wrapper-block-description-fuel_consumption {
+  margin-bottom: 2px;
+  color: white;
+  font-size: 18px;
+  line-height: 125%;
+}
+
+
+.car-products-wrapper-block-description-engine_volume {
+  margin-bottom: 2px;
+  color: white;
+}
+
+.car-products-background {
+  height: 100%;
+  background-color: #323232;
+}
+
+span {
+  color: gray;
+}
+
+.text_button {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #1F1F1F;
+}
+
+.global_button a {
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .global_headline {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .button-text {
+    font-size: 16px;
+  }
+
+  .car-products-wrapper-block-subheadline {
+    font-size: 24px;
+  }
+  .car-products-wrapper-block-description {
+    font-size: 14px;
+  }
+  .car-products-wrapper-block-description-fuel_consumption {
+    font-size: 14px;
+  }
+  .button {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .price {
+    font-size: 30px;
+  }
+  .BYN {
+    font-size: 30px;
+  }
+  .from {
+    font-size: 14px;
+  }
+
+  .car-products-wrapper-block-button_car {
+    min-width: 77px;
+    max-height: 19px;
+    padding: 7.5px 12.5px;
+  }
+
+  .text_button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-products-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .global_headline {
+    font-size: 35px;
+  }
+  .button-text {
+    font-size: 18px;
+  }
+  .button{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .car-products-wrapper-block-subheadline {
+    font-size: 30px;
+  }
+  .car-products-wrapper-block-description {
+    font-size: 18px;
+  }
+  .car-products-wrapper-block-description-fuel_consumption {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 40px;
+    line-height: 89%;
+
+    letter-spacing: -0.02em;
+  }
+  .BYN {
+    font-size: 40px;
+    line-height: 89%;
+    letter-spacing: -0.02em;
+  }
+  .from {
+    font-size: 20px;
+  }
+
+  .car-products-wrapper-block-button_car {
+    max-width: 128px;
+    padding: 10px 20px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 84px;
+  }
+}
+
+@media (max-width: 320px) {
+  .car-products-wrapper {
+    gap: 16px;
+  }
+  .global_headline {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    font-size: 18px;
+  }
+  .button-text {
+    font-size: 9px;
+    line-height: 117.9%;
+    letter-spacing: -0.01em;
+  }
+  .car-products-wrapper-block-subheadline {
+    font-size: 14px;
+    line-height: 99.7%;
+    letter-spacing: -0.01em;
+    padding-left: 8px;
+  }
+  .car-products-wrapper-block-description {
+    font-size: 9px;
+    line-height: 125%;
+  }
+  .car-products-wrapper-block-description-fuel_consumption {
+    font-size: 9px;
+    line-height: 125%;
+  }
+  .price {
+    font-size: 18px;
+    line-height: 89%;
+    letter-spacing: -0.02em;
+    margin-right: 5px;
+  }
+  .BYN {
+    font-size: 18px;
+    line-height: 89%;
+    letter-spacing: -0.02em;
+  }
+  .from {
+    font-size: 9px;
+    line-height: 99.7%;
+    letter-spacing: -0.01em;
+    margin-top: 6.39px;
+    margin-right: 2.4px;
+  }
+  .car-products-wrapper-block-button_car {
+    min-width: 57px;
+    padding: 5px 6.5px;
+    margin-top: 3px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .description {
+    padding: 0 6px;
+  }
+
+  .info {
+    margin-top: 14px;
+  }
+  .car-products-wrapper-block-price {
+    margin-top: 8px;
+  }
+
+  .button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .text_button {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    padding: 15px 20px;
+  }
+
+}

@@ -13,6 +13,8 @@
 @import '~@styles/shared/_editor.scss';
 @import './_variables.scss';
 @import './_sprite.scss';
+@import "global";
+
 
 /* ------------------------------------------------------------ *\
     Theme
@@ -23,11 +25,13 @@
 @import './_generic*.scss';
 
 
+
 /* ------------------------------------------------------------ *\
     Blocks
 \* ------------------------------------------------------------ */
 @import "blocks/question-module";
 @import "blocks/test";
+@import "blocks/car-products";
 @import "blocks/hero-module";
 
 @import "blocks/benefist-module";
