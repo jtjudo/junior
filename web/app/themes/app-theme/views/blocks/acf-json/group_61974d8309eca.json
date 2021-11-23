@@ -154,6 +154,25 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_619b6b84a5f3a",
+            "label": "New Car?",
+            "name": "new_car",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -173,5 +192,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637522280
+    "modified": 1637575587
 }
