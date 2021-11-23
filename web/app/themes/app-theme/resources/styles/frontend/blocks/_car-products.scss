@@ -18,9 +18,17 @@
 }
 
 
-
-
 .car-products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.car-products-wrapper-ajax {
+
+}
+
+.wrapper-car {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -90,6 +98,7 @@ hr {
   margin-left: auto;
 }
 
+
 .button {
   background: #FDB312;
   border-radius: 50px;
@@ -128,8 +137,8 @@ hr {
 }
 
 .car-products-wrapper-block {
-  overflow: hidden;
   border-radius: 16px;
+  position: relative;
 }
 
 .car-products-wrapper-block-description-fuel_consumption {
@@ -146,7 +155,6 @@ hr {
 }
 
 .car-products-background {
-  height: 100%;
   background-color: #323232;
 }
 
@@ -164,6 +172,38 @@ span {
 .global_button a {
   text-decoration: none;
 }
+
+.cars-label {
+  position: absolute;
+  background: yellow;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -15px;
+  z-index: 10;
+  left: -15px;
+  color: black;
+}
+
+.car-products-wrapper-ajax {
+  padding-top: 30px;
+}
+
+.car-products-wrapper-ajax:last-child {
+  padding-bottom: 395px;
+}
+
+@media ( max-width: 1200px){
+  .car-products-wrapper-ajax {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 @media (max-width: 1440px) {
   .global_headline {
@@ -210,6 +250,7 @@ span {
 }
 
 @media (max-width: 768px) {
+
   .car-products-wrapper {
     grid-template-columns: 1fr;
   }
@@ -219,7 +260,7 @@ span {
   .button-text {
     font-size: 18px;
   }
-  .button{
+  .button {
     margin-top: 80px;
     margin-bottom: 80px;
   }
@@ -257,7 +298,17 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 590px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 465px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .car-products-wrapper {
     gap: 16px;
   }
@@ -335,5 +386,4 @@ span {
     letter-spacing: -0.01em;
     padding: 15px 20px;
   }
-
 }

@@ -7,6 +7,7 @@ import './spritesvg';
 // blocks
 import './blocks/test';
 import './blocks/question-module';
+import './blocks/cards-ajax';
 
 // Your code goes here ...
 

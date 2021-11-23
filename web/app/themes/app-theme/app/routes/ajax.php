@@ -19,3 +19,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	'ExampleAjaxController@postRequest'
 );
 \MyApp::route()->get()->where( 'ajax', 'get-request' )->handle( 'ExampleAjaxController@getRequest' );
+\MyApp::route()->post()->where('ajax', 'carsAjax', true, true)->handle('CarsAjax@carsRequest');
