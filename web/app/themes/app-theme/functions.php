@@ -85,6 +85,24 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR
              . 'hooks.php';
 
+register_nav_menus([
+	'main_header' => 'Меню хедер',
+	'main_footer' => 'Меню футер',
+]);
+
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_page(array(
+		'page_title'   => 'Theme General Settings',
+		'menu_title'  => 'Глобальные настройки',
+		'menu_slug'   => 'theme-general-settings',
+		'capability'  => 'edit_posts',
+		'redirect'    => false
+	));
+}
+
+add_filter('show_admin_bar', '__return_false');
+
 add_action('init', 'create_new_custom_post_type_cars');
 function create_new_custom_post_type_cars(){
 	register_post_type('products', array(
