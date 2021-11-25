@@ -8,3 +8,5 @@
 add_filter( 'wpemerge.partials.footer.hook', '__return_false' );
 \MyApp::render( 'views.partials.footer' );
 remove_filter( 'wpemerge.partials.footer.hook', '__return_false' );
+
+
