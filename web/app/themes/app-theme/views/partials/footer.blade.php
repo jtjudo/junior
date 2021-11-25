@@ -20,6 +20,7 @@
 		$data_Individual_entrepreneur = get_field('data_Individual_entrepreneur', 'option');
 		$mail = get_field('mail', 'option');
 	@endphp
+
 	<div class="container">
 		<div class="container-background">
 			<div class="container-content">
