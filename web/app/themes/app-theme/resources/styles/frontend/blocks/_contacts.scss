@@ -1,0 +1,200 @@
+.contacts-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 90px 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1F1F1F;
+  justify-content: space-between;
+
+}
+.page__content{
+  background-color: #F3F3F3;
+}
+.contacts-content-left {
+  width: 100%;
+  padding-right: 10px;
+}
+
+
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  color: #B0B0B0;
+  margin: 0;
+}
+
+.contacts-content-left-phone h3 {
+  padding-bottom: 10px;
+}
+
+.phone {
+  padding-bottom: 10px;
+}
+
+.mesenger a {
+  padding-right: 15px;
+}
+
+.contacts-content-left-address {
+  padding-right: 50px;
+}
+
+.мobile-network-operator {
+  padding-right: 10px;
+}
+
+.mesenger {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.contacts-content-left-address-email {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.contacts-content-left-working-hours {
+  padding-bottom: 30px;
+}
+
+.contacts-content-left-socials h3 {
+  padding-bottom: 15px;
+}
+
+.contacts-content-left-socials a {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  padding-right: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.socials img {
+  padding-right: 5px;
+}
+
+.socials a:hover {
+  cursor: pointer;
+  color: #838383;
+}
+
+.contacts-content {
+  display: flex;
+}
+
+.contacts-content-right-headline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  color: #1F1F1F;
+}
+
+//.contacts-content-right-forms input {
+//  border: none;
+//  border-radius: 10px;
+//  padding: 20px;
+//  margin: 10px 0;
+//}
+
+.wpcf7-submit {
+  background-color: #FDB312;
+  border-radius: 50px;
+  padding: 20px 35px;
+  border: none;
+
+}
+.wpcf7-validates-as-required {
+  width: 500px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+.submit {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.wpcf7-spinner {
+  position: absolute;
+}
+.submit input {
+  cursor: pointer;
+}
+.submit input:hover {
+  background-color: #FFD600;
+}
+.contacts-content-right-forms textarea {
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.mapp-layout {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media(max-width: 1100px)  {
+  .contacts-content {
+    display: grid;
+    justify-content: center;
+  }
+  .contacts-content-right {
+    padding-top: 82px;
+  }
+}
+@media(max-width: 600px)  {
+  .contacts-content-left-address-email {
+    display: grid;
+
+  }
+  .contacts-content-left-email {
+    padding-top: 20px;
+  }
+  .socials {
+    display: grid;
+  }
+  .socials a{
+    padding-bottom: 35px;
+  }
+  .user-name input{
+    width: auto;
+  }
+  .user-phone input {
+    width: auto;
+  }
+  .your-message textarea {
+    width: auto;
+  }
+  .contacts-content {
+
+  }
+}
+@media(max-width: 425px) {
+  .user-name input{
+    width: 250px;
+  }
+  .user-phone input {
+    width: 250px;
+  }
+  .your-message textarea {
+    width: 250px;
+  }
+}
