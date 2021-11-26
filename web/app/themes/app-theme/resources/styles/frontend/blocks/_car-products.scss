@@ -154,6 +154,11 @@ hr {
   color: white;
 }
 
+.car-products-wrapper-block-description-transmissions {
+  margin-bottom: 2px;
+  color: white;
+}
+
 .car-products-background {
   background-color: #323232;
 }
@@ -196,14 +201,17 @@ span {
   padding-bottom: 395px;
 }
 
-@media ( max-width: 1200px){
-  .car-products-wrapper-ajax {
-    display: grid;
-    grid-template-columns: 1fr;
+@media (max-width: 1200px) {
+  .car-products-wrapper {
+    display: flex;
+    flex-direction: column;
   }
+
+ .car-products-wrapper-block {
+   min-width: 100%;
+ }
+
 }
-
-
 
 @media (max-width: 1440px) {
   .global_headline {

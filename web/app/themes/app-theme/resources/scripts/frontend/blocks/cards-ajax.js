@@ -1,4 +1,4 @@
-let postPesPage = 2;
+let postPesPage = 3;
 const result = document.querySelector('.car-products-wrapper-ajax');
 
 function clickBtn () {

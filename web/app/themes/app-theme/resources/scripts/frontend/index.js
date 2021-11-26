@@ -8,6 +8,7 @@ import './spritesvg';
 import './blocks/test';
 import './blocks/question-module';
 import './blocks/cards-ajax';
+import './blocks/button-modal';
 
 // Your code goes here ...
 

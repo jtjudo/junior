@@ -37,7 +37,20 @@
   border-radius: 50px;
 }
 
+@media (max-width: 1200px) {
 
-
+  .car-products-wrapper-ajax {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-car {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .car-products-wrapper-block {
+    width: 90%;
+  }
+}
 
 
