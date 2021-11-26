@@ -11,8 +11,41 @@ $font-family-serif: Times, 'Times New Roman', serif;
     @content;
   }
 }
+@mixin _880 {
+  @media (max-width: 880px) {
+    @content;
+  }
+}
+
+@mixin _880M {
+  @media (max-width: 880px) {
+    @content;
+  }
+}
+
 @mixin _768 {
   @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin _768M {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin _640 {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin _640M {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin _370 {
+  @media (max-width: 370px) {
     @content;
   }
 }

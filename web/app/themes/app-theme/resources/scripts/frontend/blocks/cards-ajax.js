@@ -3,10 +3,12 @@ const result = document.querySelector('.car-products-wrapper-ajax');
 
 function clickBtn () {
   const btn = document.querySelector('.button-ajax-cars');
-  btn.addEventListener('click', () => {
-    postPesPage = postPesPage + 2;
-    ajaxCarsFilter();
-  })
+  if (btn !== null) {
+    btn.addEventListener('click', () => {
+      postPesPage = postPesPage + 2;
+      ajaxCarsFilter();
+    })
+  }
 }
 
 

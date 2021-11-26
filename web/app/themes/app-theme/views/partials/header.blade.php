@@ -36,40 +36,35 @@
 	$telegram = get_field('telegram', 'option');
 	$viber = get_field('viber', 'option');
 	$watsapp = get_field('watsapp', 'option');
+    $headline_form = get_field('headline', 'option');
+    $form_car = get_field('form', 'option');
 
 
 @endphp
 <header style="background: linear-gradient(180deg, #F3F3F3 43.58%, rgba(243, 243, 243, 0.92) 100%);">
+	<div class="button-modal"></div>
+	<div class="modal-container">
+		<div class="button-modal-output">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<path d="M0 0L24 24M24 0L0 24" stroke="#1F1F1F"/>
+			</svg>
+		</div>
 
+		<div class="button-modal-decription">
+
+			<div class="button-modal-decription-text">
+				<p>{{$headline_form}}</p>
+			</div>
+
+			<div class="contact-form">
+				{!! $form_car !!}
+			</div>
+
+		</div>
+
+	</div>
 	<div class="container">
 		<div class="header">
-
-
-			<div class="button-modal">
-				<div class="modal-container">
-					<div class="button-modal-output"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-							<path d="M0 0L24 24M24 0L0 24" stroke="#1F1F1F"/>
-						</svg></div>
-
-					<div class="button-modal-decription">
-						<div class="button-modal-decription-text"><p>Оставьте заявку и мы
-								Вам перезвоним</p></div>
-
-						<div class="button-modal-form">
-							<div class="button-modal-form-item"><input name="name" value="Ваше Имя"
-																	   type="text"></div>
-							<div class="button-modal-form-item"><input name="number" value="Ваш номер телефона"
-																	   type="text"></div>
-						</div>
-						<div>
-							<button class="button-modal-btn" type="submit">Отправить</button>
-						</div>
-
-					</div>
-
-
-				</div>
-			</div>
 
 			<div class="header-block-left">
 				@if(!empty($button))
@@ -78,7 +73,8 @@
 					</div>
 
 					<div class="header-button-btn-mobile">
-						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+						<svg class="header-button-btn-mobile-modal" xmlns="http://www.w3.org/2000/svg" width="50"
+							 height="50" viewBox="0 0 50 50"
 							 fill="none">
 							<rect width="50" height="50" rx="25" fill="#E0E0E0"/>
 							<path
@@ -150,6 +146,7 @@
 			</div>
 
 			@include('views.partials.logo')
+
 			<div class="header-desktop">
 				@php
 					wp_nav_menu([
@@ -168,16 +165,66 @@
 						<line x1="0.5" y1="17.5" x2="23.5" y2="17.5" stroke="#1F1F1F" stroke-linecap="round"/>
 					</svg>
 				</div>
-				@php
-					wp_nav_menu([
-						'theme_location'  => 'main_header',
-						'menu'            => 'header menu',
-					])
-				@endphp
-			</div>
 
+
+
+			</div>
 		</div>
 	</div>
 
+	<div class="burger-background">
+		<div class="header-mobile-menu">
+			@php
+				wp_nav_menu([
+					'theme_location'  => 'main_header',
+					'menu'            => 'header menu',
+				])
+			@endphp
+		</div>
+		<div class="burger-description">
+			<div class="burger-description-adress">
+				{{$adress}}
+			</div>
+			<div class="burger-description-hours">
+				{{$hours}}
+			</div>
+			<div class="header-description-connection-phone_number">
+				<p>{{$phone}}</p>
+			</div>
+			<div class="burger-description-social">
+				@foreach($socials as $social)
+					<a href="{{$social['link']}}">
+						<div class="burger-description-social-picture">
+							<img src="{{$social['pictures']['url']}}" alt="">
+						</div>
+					</a>
+				@endforeach
+			</div>
+
+			<div class="burger-button">
+				<p class="burger-button-btn">{!! $button !!}</p>
+			</div>
+
+			<div class="burger-description-connection-messengers">
+				@if(!empty($telegram))
+					<div class="burger-description-connection-messengers-item-telegram">
+						<img src="{{$telegram['image']['url']}}" alt="">
+					</div>
+				@endif
+
+				@if(!empty($viber))
+					<div class="burger-description-connection-messengers-item-viber">
+						<img src="{{$viber['image']['url']}}" alt="">
+					</div>
+				@endif
+
+				@if(!empty($watsapp))
+					<div class="burger-description-connection-messengers-item-watsapp">
+						<img src="{{$watsapp['image']['url']}}" alt="">
+					</div>
+				@endif
+			</div>
+		</div>
+	</div>
 </header>
 
