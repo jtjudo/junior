@@ -135,7 +135,16 @@ function create_new_custom_post_type_cars(){
 		'supports'           => array('title','editor','author','thumbnail','excerpt')
 	) );
 }
+if (function_exists('acf_add_options_page')) {
 
+	acf_add_options_page(array(
+		'page_title'   => 'Глобальные настройки',
+		'menu_title'  => 'Глобальные настройки',
+		'menu_slug'   => 'theme-general-settings',
+		'capability'  => 'edit_posts',
+		'redirect'    => false
+	));
+}
 add_action( 'after_setup_theme', 'gutenberg_setup_theme' );
 function gutenberg_setup_theme(){
 
