@@ -12,10 +12,12 @@
 	$subheadline = get_field('subheadline');
 	$info_text = get_field('info_text');
 	$button = get_field('button');
+    $background = get_field('background');
+
 @endphp
-<section>
-	<div class="container">
-		<div class="information-module-background">
+
+	<section style="background-image: url({{$background['url']}});  background-repeat: no-repeat; background-size: cover;">
+	<div class="container" >
 			<div class="information-module">
 				@if(!empty($headline))
 					<div class="information-module-headline">
@@ -54,6 +56,5 @@
 					@endif
 				</div>
 			</div>
-		</div>
 	</div>
-</section>
+	</section>
