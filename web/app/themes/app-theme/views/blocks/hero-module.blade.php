@@ -13,6 +13,7 @@
 	$advantages = get_field('advantage');
     $text_btn = get_field('text_btn');
     $link_btn = get_field('link_btn');
+
 @endphp
 @if(!empty($image['url']))
 	<section class="hero" style="background-image: url({{$image['url']}})">
@@ -44,11 +45,12 @@
 					@if(!empty($link_btn && $text_btn))
 						<div class='hero-module-button'>
 							<button>
-								<a href="{!! $link_btn !!}">{!! $text_btn !!}</a>
+							{!! $text_btn !!}
 							</button>
 						</div>
 					@endif
 				</div>
 			</div>
 		</div>
+
 	</section>

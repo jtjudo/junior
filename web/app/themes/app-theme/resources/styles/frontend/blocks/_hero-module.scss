@@ -82,7 +82,100 @@
   display: flex;
   align-items: center;
 }
+.form_application-name input{
+  width: 415px;
+  height: 63px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 35px 25px;
 
+}
+.form_application-phone input{
+  width: 415px;
+  height: 63px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 35px 25px;
+}
+.form_application-phone input:hover{
+  border: 2px solid #FDB312;
+}
+.form_application-name input:hover{
+  border: 2px solid #FDB312;
+}
+.form_application-phone {
+  padding-bottom: 30px;
+}
+.form_application-submit{
+  display: flex;
+  justify-content: end;
+}
+.form_application-submit input:hover {
+  background-color: #FFD600;
+  cursor: pointer;
+}
+.form-application{
+  display: none;
+  justify-content: center;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+.active-form {
+  display: flex;
+}
+.active-background{
+  background-color: #414141;
+}
+.scrol-block {
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background: rgba(176, 176, 176, 0.8);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  z-index: -1;
+}
+.active-backround {
+  opacity: 1;
+  z-index: 1;
+}
+.form-application-wrapper {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 575px;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+}
+.form-application-wrapper button{
+  width: 24px;
+  height: 24px;
+  border: none;
+  font-size: 24px;
+  color: #1F1F1F;
+
+}
+.form-application-btn {
+  display: flex;
+  justify-content: end;
+}
+.form-application-btn button:hover {
+  cursor: pointer;
+}
 @media (max-width: 1440px) {
   .hero-module-headline {
     font-size: 55px;
@@ -183,4 +276,3 @@
     font-size: 14px;
   }
 }
-
