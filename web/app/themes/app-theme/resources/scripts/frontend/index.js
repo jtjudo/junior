@@ -8,7 +8,7 @@ import './spritesvg';
 import './blocks/test';
 import './blocks/question-module';
 import './blocks/cards-ajax';
-
+import './blocks/hero_module';
 // Your code goes here ...
 
 async function postRequest() {
